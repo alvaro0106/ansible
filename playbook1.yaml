@@ -1,0 +1,11 @@
+---
+- name: Copiar ficheros home/l10u a los servidores 
+  hosts: all
+  remote_user: l10u
+  become: True
+  tasks:
+    - name : copiar 1 /home/l10u
+      copy : src=/home/alvaro/ansible/inventory  dest=/home
+      
+    - name : copiar 2 /home/ubuntu
+      copy : src=/home/alvaro/ansible/inventory  dest=/home/ubuntu
