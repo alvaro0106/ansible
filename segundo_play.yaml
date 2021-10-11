@@ -1,0 +1,7 @@
+---
+- hosts: storage
+  remote_user: l10u
+  become: true
+  tasks: 
+    - name: install lftp
+      apt: name=lftp state=latest
