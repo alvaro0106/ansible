@@ -8,7 +8,7 @@
 
 [localhost]
 #Lap-top lenono
-172.10.4.58 ansible_user=alvaro ansible_sudo_pass=Desdemona
+192.168.1.11 ansible_user=alvaro ansible_sudo_pass=Desdemona
 
 [localhost:vars]
 respaldo_user=alvaro

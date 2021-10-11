@@ -1,0 +1,13 @@
+---
+- name: Actualizar configuracion sshd_config
+  hosts: localhost
+  connection: local 
+  tasks: 
+    - name: copiar fichero 
+      copy: src=sshd_config  dest=/home/alvaro/proyectos/
+      notify: restart_sshd
+  handlers:
+    - name: restart_sshd
+      service: name=sshd  state=restarted
+      
+...
