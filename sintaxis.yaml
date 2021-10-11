@@ -1,0 +1,17 @@
+---
+- name: crear fichero usando variables
+  hosts: localhost
+  connection: local
+  become: True
+  vars: 
+   - miip: "1.2.3.4"
+  tasks:
+    - name: crear ficheros hosts
+      template: src=hosts.j2 dest=/home/alvaro/proyectos owner=root group=root mode=0644
+    - name: crear fichero 2
+      template: 
+        src: hosts.j2 
+        dest: /home/alvaro/proyectos 
+        owner: root 
+        group: root 
+        mode: 0644
