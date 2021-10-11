@@ -1,0 +1,9 @@
+---
+- name: primer playbook 
+  hosts: storage
+  remote_user: l10u
+  become: true
+  tasks: 
+    - name: Instalr vim
+      apt: name=vim state=latest
+    - include: instalar_apache2.yaml
