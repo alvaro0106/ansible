@@ -1,0 +1,8 @@
+---
+- name: Instalar y configurar apache2
+  hosts: storage
+  remote_user: l10u
+  become: true
+  roles:
+    - apache2
+    
