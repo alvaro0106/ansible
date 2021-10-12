@@ -1,6 +1,6 @@
 ---
 - name: Instalar y configurar apache2
-  hosts: storage:multipass
+  hosts: all
   remote_user: l10u
   become: true
   roles:

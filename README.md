@@ -27,3 +27,18 @@ Forma dinamica de utilizar las variables para que le fichero sea dinamico, dentr
    Montar sistema debian (solo si se cumple la condicion)
    {% endif %}
 - Cometarios: comtario {# comentario #}
+
+# Prioridad variables
+- Variables de grupo definidas dentro del inventsrio
+- Variables de grupo ( inventario -> grupo_vars_all -> <grupo>)
+- Variables servidor (inventario -> host_vars / <servidor>)
+- "Facts" del serfidor 
+- Variables del play (-> vars_propt -> vars_file) 
+- Variables del role (Definidas en /roles/rol/vars/main.yaml)
+- Variables de bloque de tareas 
+- Parametrod role -> included_pars -> include_vars
+- Set_facts / register_vars
+- extra_vars (!siempre ganan)
+
+# Condiciones
+-When
