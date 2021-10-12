@@ -41,4 +41,29 @@ Forma dinamica de utilizar las variables para que le fichero sea dinamico, dentr
 - extra_vars (!siempre ganan)
 
 # Condiciones
--When
+-When 
+
+# 3 Modulos
+- acl: Establece y obtiene informacion de listas de control (ACLS)
+- archive: Archivo comprimido a partir de un a lista de ficheros o estrucutra de directorios
+- ansible: Fichero de configuracion 
+- Mod 1. ->  **blokingfile** Inserta actualiza o elimina bloque de texto en un fichero
+- Mod 2. ->  **copy** Copia ficheros a ubicaciones remotas
+- Mod 3. ->  **fetch** Obtiene ficheros a un nodo remoto
+- Mod 4. ->  **file** Permisos a ficheros 
+- Mod 5. ->  **find** Devuelve una lista de fichros a partir de un patron dado 
+- Mod 6. ->  **inifile** Gestiona valores de un fichero INI
+- Mod 7. ->  **ISO_EXTRACT** Extrae ficheros de un iso
+- Mod 8. ->  **linefile** Asegura que una linea este en un fichero o remplaza contenido
+- Mod 9. ->  **patch** Aplica parches utilizando GNU patch
+- Mod 10. ->  **replice** Remplaza las coinicidencias de un texto
+- Mod 11. ->  **start** Obtiene info del fichero o sistemas de ficheros 
+- Mod 12. ->  **syncronice** Syncronizar utilizando **rsync**
+- Mod 13. ->  **tempfile** Crear ficheros o directorios temporales
+- Mod 14. ->  **template** Copiar y procesar una platilla de un nodo remoto
+- Mod 15. ->  **unarchive** Extraer despues de capturarlo
+- Mod 16. ->  **xatr** Obtiene archivos extendidos 
+
+OPENSSL 
+- openssl_privatekey: Generar claves privadas openssl
+- openssl_publikey: Generar claves publicas de openssl

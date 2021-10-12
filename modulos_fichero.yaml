@@ -1,0 +1,7 @@
+---
+- name: Ejemplos de modulos de ficheros y open ssl 
+  hosts: all
+  become: True
+  tasks: 
+   - name: Crear fichero con contenido especifico 
+     copy: content="Esto es un ejemplo" dest="/home/ubuntu"
