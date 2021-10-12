@@ -17,3 +17,14 @@ Igual que las tareas Podemos separar los play incluir la definicin de un play en
 
 **tasks** Foler obligatprio
 La practica de Include y roles se ejecuto si problemas 
+
+# Templates (platillas)
+Forma dinamica de utilizar las variables para que le fichero sea dinamico, dentro de una plantilla see pueden espwcificar las instrucciones:
+
+- Espreciones: {{ Variables }}
+- control:  {% ... %}, un ejemplo seria una condicion:
+   {% if ansible_distribution == "Debian" %}
+   Montar sistema debian (solo si se cumple la condicion)
+   {% endif %}
+
+   

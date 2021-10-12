@@ -1,1 +1,5 @@
 Hola al servidor ansible {{ ansible_fqdn }}
+
+{% if ansible_distribution == "ubuntu" %}
+Este sistema es ubuntu
+{% endif %}
