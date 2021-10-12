@@ -26,5 +26,4 @@ Forma dinamica de utilizar las variables para que le fichero sea dinamico, dentr
    {% if ansible_distribution == "Debian" %}
    Montar sistema debian (solo si se cumple la condicion)
    {% endif %}
-
-   
+- Cometarios: comtario {# comentario #}

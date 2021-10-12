@@ -4,5 +4,5 @@
   remote_user: l10u
   become: true
   roles:
-    - apache2
+    - { role: apache2, lista_usuarios: ["usuario1","root1"] }
     

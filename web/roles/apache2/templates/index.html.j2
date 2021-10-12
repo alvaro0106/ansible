@@ -3,3 +3,10 @@ Hola al servidor ansible {{ ansible_fqdn }}
 {% if ansible_distribution == "ubuntu" %}
 Este sistema es ubuntu
 {% endif %}
+
+Lista de usuarios
+{% for usuario in lista_usuarios %}
+{{ usuario }}
+{% endfor %}
+
+Final de la plantilla
